@@ -169,6 +169,6 @@ class AuthorizeRequest extends AbstractRequest
 
     protected function getEndpoint()
     {
-        return parent::getEndpoint() . '/payments';
+        return parent::getEndpoint() . '/checkouts';
     }
 }

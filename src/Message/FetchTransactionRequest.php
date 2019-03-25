@@ -18,6 +18,6 @@ class FetchTransactionRequest extends AbstractRequest
 
     protected function getEndpoint()
     {
-        return parent::getEndpoint() . '/payments/' . $this->getTransactionReference();
+        return parent::getEndpoint() . '/checkouts/' . $this->getTransactionReference().'/payment';
     }
 }
